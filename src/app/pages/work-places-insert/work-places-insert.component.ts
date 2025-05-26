@@ -50,6 +50,7 @@ export class WorkPlacesInsertComponent {
         error: (err) => {
           console.error('Error while adding workspace:', err);
           alert('An error occurred while adding the workspace.');
+          this.router.navigate(['/login']);
         }
       });
     }

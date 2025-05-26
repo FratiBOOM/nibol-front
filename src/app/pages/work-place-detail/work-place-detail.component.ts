@@ -74,6 +74,23 @@ export class WorkplaceDetailsComponent implements OnInit {
     });
     this.router.navigate(['/']);
   }
+  isBookingTimeValid(): boolean {
+  if (!this.place || !this.bookingData.data || !this.bookingData.orarioInizio || !this.bookingData.orarioFine) {
+    return false;
+  }
+
+  const opening = this.place.orarioApertura;
+  const closing = this.place.orarioChiusura;
+
+  const selectedDate = new Date(this.bookingData.data);
+  const startTime = new Date(`${this.bookingData.data}T${this.bookingData.orarioInizio}`);
+  const endTime = new Date(`${this.bookingData.data}T${this.bookingData.orarioFine}`);
+  const openingTime = new Date(`${this.bookingData.data}T${opening}`);
+  const closingTime = new Date(`${this.bookingData.data}T${closing}`);
+
+  return startTime >= openingTime && endTime <= closingTime && startTime < endTime;
+}
+
   postReview() {
     if (!this.place || !this.place.id) return;
 
