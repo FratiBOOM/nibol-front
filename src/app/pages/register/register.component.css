@@ -1,0 +1,25 @@
+
+.button-register{
+    background-color: rgb(255, 61, 0) !important;
+    color: white;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.card-register{
+    border-radius: 3%;
+}
+.progress-bar.weak {
+  background-color: red;
+}
+
+.progress-bar.medium {
+  background-color: orange;
+}
+
+.progress-bar.strong {
+  background-color: green;
+}

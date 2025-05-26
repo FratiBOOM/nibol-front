@@ -1,1 +1,51 @@
-<p>register works!</p>
+<section class="container">
+    <div class="row d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="card col-12 pt-5 px-3 card-register " style="width: 50%;">
+            <h1>Signup</h1>
+            <p>Alredy registered?<a routerLink="/login"><strong>Login</strong></a></p>
+            <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+                <div class="form-group py-3">
+                    <input placeholder="Insert name" type="name" id="name" name="name" class="form-control" required [(ngModel)]="registerData.Nome" />
+                </div>
+                <div class="form-group py-3">
+                    <input placeholder="Insert surname" type="name" id="surname" name="surname" class="form-control" required [(ngModel)]="registerData.Cognome"/>
+                </div>
+                <div class="form-group py-3">
+                    <input placeholder="Insert email" type="email" id="email" name="email" class="form-control"
+                        required [(ngModel)]="registerData.Email" />
+                </div>
+
+                <div class="form-group py-3">
+                    <input placeholder="Insert password" type="password" id="password" name="password"
+                        class="form-control" required [(ngModel)]="registerData.password"
+                        (input)="checkPasswordStrength(registerData.password)">
+                </div>
+                <div class="password-strength mt-2 ">
+                    <div class="progress" style="height: 6px;">
+                        <div class="progress-bar" [ngClass]="passwordStrengthClass"
+                            [style.width.%]="passwordStrengthPercent">
+                        </div>
+                    </div>
+                    <small class="text-muted strength-label">{{ passwordStrengthText }}</small>
+                </div>
+                <div class="form-group form-check pt-4 mt-3">
+                    <input type="checkbox" id="acceptTerms" name="acceptTerms" class="form-check-input"
+                        [(ngModel)]="acceptTerms" required #acceptTermsRef="ngModel" />
+                    <label class="form-check-label" for="acceptTerms">
+                        Agree to our <a href="#">Terms and Conditions</a>
+                    </label>
+                    <div *ngIf="acceptTermsRef.invalid && (acceptTermsRef.dirty || acceptTermsRef.touched)"
+                        class="text-danger">
+                        You must accept the terms and conditions to proceed.
+                    </div>
+                </div>
+
+                <div class="p-3 col-12 d-flex justify-content-center">
+                    <button class="btn button-register" type="submit" [disabled]="!acceptTerms">Create account</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<router-outlet></router-outlet>
