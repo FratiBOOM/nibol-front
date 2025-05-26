@@ -1,0 +1,10 @@
+label {
+  font-weight: 500;
+}
+h5, h6 {
+  color: #212529;
+}
+.button-contact{
+    background-color: rgb(255, 61, 0);
+    color: white;
+}

@@ -5,13 +5,18 @@ export interface WorkPlace {
   id?: string;
   nome: string;
   indirizzo: string;
-  tipo: string;
-  descrizione: string;
+  citta: string; // <-- senza accento
+  descrizione?: string;
+  ratingMedio: number;
   wifiDisponibile: boolean;
   preseCorrente: boolean;
-  città: string;
-  immagineUrl?: string;
-  ratingMedio: number;
-  bookings: Booking[];
-  reviews: Review[];
+  ambienteSilenzioso?: boolean;
+  orarioApertura?: string;
+  orarioChiusura?: string;
+  website?: string;
+  telefono?: string;
+  livelloRumore?: string;
+  fasciaPrezzo?: string;
 }
+
+

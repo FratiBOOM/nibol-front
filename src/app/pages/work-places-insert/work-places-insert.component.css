@@ -1,0 +1,8 @@
+.button-insert{
+    background-color: rgb(255, 61, 0);
+    color: white;
+}
+
+.button-outline-insert{
+    border: solid 1px rgb(255, 61, 0);
+}

@@ -1,0 +1,18 @@
+h2, h3 {
+  color: #1a1a1a;
+}
+
+h6 {
+  font-weight: 600;
+}
+
+p {
+  font-size: 0.95rem;
+}
+.button-about{
+    background-color: rgb(255, 61, 0) ;
+    color: white;
+}
+.button-about-outline{
+    border: solid 1px rgb(255, 61, 0);
+}

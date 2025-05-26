@@ -11,13 +11,13 @@
       <div class="d-flex justify-content-center flex-grow-1">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
           <li class="nav-item">
-            <a class="nav-link" routerLink="/" (click)="closeMobileMenu()">Explore</a>
+            <a class="nav-link" routerLink="/explore" (click)="closeMobileMenu()">Explore</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/" (click)="closeMobileMenu()">About Us</a>
+            <a class="nav-link" routerLink="/about-us" (click)="closeMobileMenu()">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/" (click)="closeMobileMenu()">Contact</a>
+            <a class="nav-link" routerLink="/contact" (click)="closeMobileMenu()">Contact</a>
           </li>
           <li class="nav-item mt-2 d-lg-none" *ngIf="!isLogged()">
             <a class="btn button-signup w-100" routerLink="/login" (click)="closeMobileMenu()">Signup</a>

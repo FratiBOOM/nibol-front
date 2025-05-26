@@ -1,0 +1,98 @@
+<section *ngIf="place" class="container py-4">
+    <h2>{{ place.nome }}</h2>
+    <p>
+        <i class="bi bi-geo-alt-fill"></i> {{ place.indirizzo }}, {{ place.citta }}
+        <span class="ms-3">⭐ {{ place.ratingMedio }}</span>
+    </p>
+
+    <div class="row">
+
+        <div class="col-md-8">
+            <div class="bg-light rounded mb-3" style="height: 200px;"></div>
+
+            <ul class="nav nav-tabs mb-3">
+                <li class="nav-item">
+                    <button class="nav-link text-black" [class.active]="activeTab === 'info'"
+                        (click)="activeTab = 'info'">Information</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link text-black" [class.active]="activeTab === 'reviews'"
+                        (click)="activeTab = 'reviews'">Reviews</button>
+                </li>
+            </ul>
+
+            <ng-container *ngIf="activeTab === 'info'">
+                <div class="card p-3 shadow-sm">
+                    <h5>Description</h5>
+                    <p>{{ place.descrizione }}</p>
+
+                    <h6>Amenities</h6>
+                    <ul class="list-unstyled">
+                        <li *ngIf="place.wifiDisponibile">✔ Fast Wi-Fi</li>
+                        <li *ngIf="place.preseCorrente">✔ Power Outlets</li>
+                        <li *ngIf="place.ambienteSilenzioso">✔ Quiet Environment</li>
+                    </ul>
+
+                    <h6>Details</h6>
+                    <p><b>Hours:</b> {{ place.orarioApertura }} - {{ place.orarioChiusura }}</p>
+                    <p><b>Noise Level:</b> {{ place.livelloRumore }}</p>
+                    <p><b>Price Range:</b> {{ place.fasciaPrezzo }}</p>
+
+                    <h6>Contact</h6>
+                    <p><a [href]="place.website" target="_blank">Visit Website</a></p>
+                    <p>{{ place.telefono }}</p>
+
+                    <button class="btn btn-danger mt-3" (click)="deletePlace()">Delete</button>
+                </div>
+            </ng-container>
+
+            <ng-container *ngIf="activeTab === 'reviews'">
+  <div class="card p-3 shadow-sm">
+    <h5>Leave a review</h5>
+
+    <label>Rating</label>
+    <input type="number" [(ngModel)]="newReview.voto" class="form-control mb-2" min="0" max="5" step="0.5">
+
+    <label>Email</label>
+    <input type="email" [(ngModel)]="newReview.userEmail" class="form-control mb-2">
+
+    <label>Comment</label>
+    <textarea [(ngModel)]="newReview.commento" class="form-control mb-2" rows="3"></textarea>
+
+    <button class="btn btn-danger" (click)="postReview()">Post review</button>
+  </div>
+
+  <div *ngFor="let review of reviews" class="card mt-3 p-3 shadow-sm">
+    <div class="d-flex justify-content-between">
+      <strong>{{ review.userEmail }}</strong>
+      <small>{{ review.creazioneReview | date:'mediumDate' }}</small>
+    </div>
+    <div class="text-warning mb-1">★ {{ review.voto }}</div>
+    <p>{{ review.commento }}</p>
+  </div>
+</ng-container>
+
+
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card p-3 shadow-sm">
+                <h5>Book this space</h5>
+
+                <label class="mt-2">Select a date</label>
+                <input type="date" class="form-control" [(ngModel)]="bookingData.data" required>
+
+                <label class="mt-2">Start time</label>
+                <input type="time" class="form-control" [(ngModel)]="bookingData.orarioInizio" required>
+
+                <label class="mt-2">End time</label>
+                <input type="time" class="form-control" [(ngModel)]="bookingData.orarioFine" required>
+
+                <label class="mt-2">Your Email</label>
+                <input type="email" class="form-control" [(ngModel)]="bookingData.userEmail"
+                    placeholder="your@email.com" required>
+
+                <button class="btn btn-danger w-100 mt-3" (click)="bookNow()">Book now</button>
+            </div>
+        </div>
+    </div>
+</section>
