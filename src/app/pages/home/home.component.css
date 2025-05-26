@@ -1,0 +1,10 @@
+.span-custom{
+    font-size: 1.5em;
+}
+.button-home{
+    background-color: rgb(255, 61, 0) ;
+    color: white;
+}
+.button-outline-home{
+    border:solid 1px rgb(255, 61, 0);
+}
