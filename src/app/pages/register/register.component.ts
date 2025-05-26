@@ -25,18 +25,19 @@ export class RegisterComponent {
 
 
   onSubmit(): void {
-    this.authService.register(this.registerData).subscribe({
-      next: res => {
-        alert(`Registrazione riuscita! Benvenuto `);
-        this.router.navigate(['/login']);
-      }
-    })
-
     if (!this.acceptTerms) {
-      alert('Devi accettare i termini e condizioni per procedere.');
+      alert('You must accept the terms and conditions to proceed.');
       return;
     }
+
+    this.authService.register(this.registerData).subscribe({
+      next: res => {
+        alert('Registration successful! Welcome.');
+        this.router.navigate(['/login']);
+      }
+    });
   }
+
   checkPasswordStrength(password: string): void {
     let strength = 0;
 

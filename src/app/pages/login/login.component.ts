@@ -20,12 +20,11 @@ export class LoginComponent {
   onSubmit(): void {
     this.authService.login(this.loginData).subscribe({
       next: res => {
-        console.log('Login riuscito', res);
         localStorage.setItem('token', res.token);
         this.isLoggedIn = true;
       },
       error: err => {
-        console.error('Errore login', err);
+        alert('Login failed. Please check your credentials.');
       }
     });
   }
