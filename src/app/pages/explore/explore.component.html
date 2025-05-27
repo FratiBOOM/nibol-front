@@ -10,23 +10,21 @@
 
   <div class="row g-4">
     <div class="col-md-4" *ngFor="let place of filteredWorkspaces">
-      <div class="card h-100 shadow-sm border-0 rounded-4">
+      <div class="card h-100 d-flex flex-column shadow-sm border-0 rounded-4">
         <img [src]="place?.immagineUrl || 'assets/logo.png'" alt="Workspace image"
-        class="img-fluid rounded mb-3 w-100" style="max-height: 160; object-fit: cover;" />
+          class="rounded-top w-100" style="height: 160px; object-fit: cover;" />
 
-        <div class="card-body">
-          <div class="d-flex justify-content-end mb-2">
+        <div class="card-body d-flex flex-column">
+          <div class="d-flex justify-content-between mb-2">
+            <h5 class="fw-bold">{{ place.nome }}</h5>
             <span class="badge bg-light border text-dark fw-semibold">
               ⭐ {{ place.ratingMedio }}
             </span>
           </div>
-
-          <h5 class="fw-bold">{{ place.nome }}</h5>
           <p class="text-muted mb-1">
             <i class="bi bi-geo-alt-fill me-1"></i>
             {{ place.indirizzo }}, {{ place.citta }}
           </p>
-
           <div class="d-flex flex-wrap gap-2 mb-2">
             <span *ngIf="place.wifiDisponibile" class="badge bg-danger-subtle text-danger fw-semibold">
               <i class="bi bi-wifi me-1"></i> {{ 'EXPLORE.FAST_WIFI' | translate }}
@@ -39,12 +37,12 @@
             </span>
           </div>
 
-          <p class="mb-3 text-muted">
+          <p class="text-muted mb-3">
             <i class="bi bi-clock me-1"></i>
             {{ place.orarioApertura }} - {{ place.orarioChiusura }}
           </p>
 
-          <div class="d-flex justify-content-end">
+          <div class="mt-auto d-flex justify-content-end">
             <button class="btn button-detail px-3" [routerLink]="['/work-place', place.id]">
               {{ 'EXPLORE.DETAILS' | translate }}
             </button>
