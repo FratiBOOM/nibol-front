@@ -3,91 +3,91 @@
     <div class="col-lg-8">
       <div class="card shadow-lg rounded">
         <div class="card-body p-5">
-          <h2 class="card-title h4 mb-4">Venue Information</h2>
+          <h2 class="card-title h4 mb-4">{{ 'INSERT.TITLE' | translate }}</h2>
 
           <form [formGroup]="workplaceForm" (ngSubmit)="onSubmit()">
             <div class="mb-3">
-              <label class="form-label">Venue name</label>
+              <label class="form-label">{{ 'INSERT.NAME' | translate }}</label>
               <input type="text" class="form-control" formControlName="nome" placeholder="e.g. Café" />
             </div>
 
             <div class="mb-3">
-              <label class="form-label">Address</label>
+              <label class="form-label">{{ 'INSERT.ADDRESS' | translate }}</label>
               <input type="text" class="form-control" formControlName="indirizzo" placeholder="e.g. Via Roma 123" />
             </div>
 
             <div class="mb-3">
-              <label class="form-label">City</label>
+              <label class="form-label">{{ 'INSERT.CITY' | translate }}</label>
               <input type="text" class="form-control" formControlName="citta" placeholder="e.g. Milan" />
             </div>
 
             <div class="mb-3">
-              <label class="form-label">Description</label>
-              <textarea class="form-control" formControlName="descrizione" rows="3" placeholder="Describe your venue and why it's suitable for freelancers..."></textarea>
+              <label class="form-label">{{ 'INSERT.DESCRIPTION' | translate }}</label>
+              <textarea class="form-control" formControlName="descrizione" rows="3" placeholder="{{ 'INSERT.DESCRIPTION_PLACEHOLDER' | translate }}"></textarea>
             </div>
 
             <div class="row mb-3">
               <div class="col">
-                <label class="form-label">Opening time</label>
+                <label class="form-label">{{ 'INSERT.OPENING_TIME' | translate }}</label>
                 <input type="time" class="form-control" formControlName="orarioApertura" />
               </div>
               <div class="col">
-                <label class="form-label">Closing time</label>
+                <label class="form-label">{{ 'INSERT.CLOSING_TIME' | translate }}</label>
                 <input type="time" class="form-control" formControlName="orarioChiusura" />
               </div>
             </div>
 
             <div class="row mb-3">
               <div class="col">
-                <label class="form-label">Website</label>
+                <label class="form-label">{{ 'INSERT.WEBSITE' | translate }}</label>
                 <input type="url" class="form-control" formControlName="website" placeholder="https://example.com" />
               </div>
               <div class="col">
-                <label class="form-label">Phone</label>
+                <label class="form-label">{{ 'INSERT.PHONE' | translate }}</label>
                 <input type="tel" class="form-control" formControlName="telefono" placeholder="+39 02 1234567" />
               </div>
             </div>
 
             <div class="mb-3">
-              <label class="form-label d-block">Available amenities</label>
+              <label class="form-label d-block">{{ 'INSERT.AMENITIES' | translate }}</label>
               <div class="form-check form-check-inline">
                 <input type="checkbox" class="form-check-input" formControlName="wifiDisponibile" />
-                <label class="form-check-label">Wi-Fi</label>
+                <label class="form-check-label">{{ 'INSERT.WIFI' | translate }}</label>
               </div>
               <div class="form-check form-check-inline">
                 <input type="checkbox" class="form-check-input" formControlName="preseCorrente" />
-                <label class="form-check-label">Power outlets</label>
+                <label class="form-check-label">{{ 'INSERT.POWER' | translate }}</label>
               </div>
               <div class="form-check form-check-inline">
                 <input type="checkbox" class="form-check-input" formControlName="ambienteSilenzioso" />
-                <label class="form-check-label">Quiet environment</label>
+                <label class="form-check-label">{{ 'INSERT.QUIET' | translate }}</label>
               </div>
             </div>
 
             <div class="row mb-4">
               <div class="col">
-                <label class="form-label">Noise level</label>
+                <label class="form-label">{{ 'INSERT.NOISE_LEVEL' | translate }}</label>
                 <select class="form-select" formControlName="livelloRumore">
-                  <option value="Moderate">Moderate</option>
-                  <option value="Quiet">Quiet</option>
-                  <option value="Lively">Lively</option>
+                  <option value="Moderate">{{ 'INSERT.NOISE_LEVEL' | translate }}: Moderate</option>
+                  <option value="Quiet">{{ 'INSERT.NOISE_LEVEL' | translate }}: Quiet</option>
+                  <option value="Lively">{{ 'INSERT.NOISE_LEVEL' | translate }}: Lively</option>
                 </select>
               </div>
               <div class="col">
-                <label class="form-label">Price range</label>
+                <label class="form-label">{{ 'INSERT.PRICE_RANGE' | translate }}</label>
                 <select class="form-select" formControlName="fasciaPrezzo">
-                  <option value="€ (Budget)">€ (Budget)</option>
-                  <option value="€€ (Standard)">€€ (Standard)</option>
-                  <option value="€€€ (Premium)">€€€ (Premium)</option>
+                  <option value="€ (Budget)">{{ 'INSERT.PRICE_BUDGET' | translate }}</option>
+                  <option value="€€ (Standard)">{{ 'INSERT.PRICE_STANDARD' | translate }}</option>
+                  <option value="€€€ (Premium)">{{ 'INSERT.PRICE_PREMIUM' | translate }}</option>
                 </select>
               </div>
             </div>
 
-            <button type="submit" class="btn button-insert w-100">Add workspace</button>
+            <button type="submit" class="btn button-insert w-100">{{ 'INSERT.BUTTON_ADD' | translate }}</button>
           </form>
 
           <div class="mt-3">
-            <a routerLink="/explore" class="btn button-outline-insert w-100">Explore Spaces</a>
+            <a routerLink="/explore" class="btn button-outline-insert w-100">{{ 'INSERT.BUTTON_EXPLORE' | translate }}</a>
           </div>
         </div>
       </div>

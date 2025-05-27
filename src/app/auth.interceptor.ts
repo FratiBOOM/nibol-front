@@ -9,11 +9,19 @@ export class AuthInterceptor implements HttpInterceptor {
   constructor(private router: Router) {}
 
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    // Rotte da escludere (URL delle API pubbliche)
+    const token = localStorage.getItem('token');
     const excludedUrls = [
       '/api/Auth/forgot-password',
       '/api/Auth/reset-password'
     ];
+    if (token) {
+    const cloned = req.clone({
+      headers: req.headers.set('Authorization', `Bearer ${token}`)
+    });
+    return next.handle(cloned);
+  }
+
+  return next.handle(req);
 
     const isExcluded = excludedUrls.some(url => req.url.includes(url));
 

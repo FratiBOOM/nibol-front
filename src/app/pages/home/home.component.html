@@ -1,94 +1,94 @@
 <section class="container-fluid">
-    <div class="row">
-        <div class="col-12 d-flex justify-content-center pt-5">
-            <h1>
-                <strong>
-                    WorkSpace
-                </strong>
-            </h1>
-        </div>
-        <div class="col-12 d-flex justify-content-center ">
-            <span class="text-muted span-custom">Find, review and book the best workspaces for freelancers</span>
-        </div>
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center pt-5">
+      <h1><strong>{{ 'HOME.TITLE' | translate }}</strong></h1>
     </div>
-    <div class="row pt-5">
-        <div class="col-md-6 col-12">
-            <div class="card shadow rounded h-100">
-                <div class="card-body">
-                    <h2 class="card-title h4 mb-4">For Freelancers</h2>
-                    <ul class="list-unstyled mb-4">
-                        <li class="d-flex align-items-start mb-2">
-                            <span class="text-tick me-2">✓</span> Find comfortable workspaces near you
-                        </li>
-                        <li class="d-flex align-items-start mb-2">
-                            <span class="text-tick me-2">✓</span> Read reviews from other freelancers
-                        </li>
-                        <li class="d-flex align-items-start mb-2">
-                            <span class="text-tick me-2">✓</span> Book your spot in advance
-                        </li>
-                        <li class="d-flex align-items-start mb-2">
-                            <span class="text-tick me-2">✓</span> Share your experience with the community
-                        </li>
-                    </ul>
-                    <a routerLink="/explore" class="btn button-home w-100">Explore Spaces</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-12">
-            <div class="card shadow rounded h-100">
-                <div class="card-body">
-                    <h2 class="card-title h4 mb-4">For Owners</h2>
-                    <ul class="list-unstyled mb-4">
-                        <li class="d-flex align-items-start mb-2">
-                            <span class="text-tick me-2">✓</span> Register your venue on the platform
-                        </li>
-                        <li class="d-flex align-items-start mb-2">
-                            <span class="text-tick me-2">✓</span> Attract new freelance customers
-                        </li>
-                        <li class="d-flex align-items-start mb-2">
-                            <span class="text-tick me-2">✓</span> Manage bookings easily
-                        </li>
-                        <li class="d-flex align-items-start mb-2">
-                            <span class="text-tick me-2">✓</span> Receive feedback and improve your service
-                        </li>
-                    </ul>
-                    <a routerLink="/work-insert" class="btn button-outline-home w-100">Register Your Venue</a>
-                </div>
-            </div>
-        </div>
+    <div class="col-12 d-flex justify-content-center">
+      <span class="text-muted span-custom">{{ 'HOME.SUBTITLE' | translate }}</span>
     </div>
+  </div>
+
+  <div class="row pt-5">
+    <div class="col-md-6 col-12">
+      <div class="card shadow rounded h-100">
+        <div class="card-body">
+          <h2 class="card-title h4 mb-4">{{ 'HOME.FREELANCERS.TITLE' | translate }}</h2>
+          <ul class="list-unstyled mb-4">
+            <li class="d-flex align-items-start mb-2">
+              <span class="text-tick me-2">✓</span> {{ 'HOME.FREELANCERS.OPT1' | translate }}
+            </li>
+            <li class="d-flex align-items-start mb-2">
+              <span class="text-tick me-2">✓</span> {{ 'HOME.FREELANCERS.OPT2' | translate }}
+            </li>
+            <li class="d-flex align-items-start mb-2">
+              <span class="text-tick me-2">✓</span> {{ 'HOME.FREELANCERS.OPT3' | translate }}
+            </li>
+            <li class="d-flex align-items-start mb-2">
+              <span class="text-tick me-2">✓</span> {{ 'HOME.FREELANCERS.OPT4' | translate }}
+            </li>
+          </ul>
+          <a routerLink="/explore" class="btn button-home w-100">{{ 'HOME.FREELANCERS.BUTTON' | translate }}</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-12">
+      <div class="card shadow rounded h-100">
+        <div class="card-body">
+          <h2 class="card-title h4 mb-4">{{ 'HOME.OWNERS.TITLE' | translate }}</h2>
+          <ul class="list-unstyled mb-4">
+            <li class="d-flex align-items-start mb-2">
+              <span class="text-tick me-2">✓</span> {{ 'HOME.OWNERS.OPT1' | translate }}
+            </li>
+            <li class="d-flex align-items-start mb-2">
+              <span class="text-tick me-2">✓</span> {{ 'HOME.OWNERS.OPT2' | translate }}
+            </li>
+            <li class="d-flex align-items-start mb-2">
+              <span class="text-tick me-2">✓</span> {{ 'HOME.OWNERS.OPT3' | translate }}
+            </li>
+            <li class="d-flex align-items-start mb-2">
+              <span class="text-tick me-2">✓</span> {{ 'HOME.OWNERS.OPT4' | translate }}
+            </li>
+          </ul>
+          <a routerLink="/work-insert" class="btn button-outline-home w-100">{{ 'HOME.OWNERS.BUTTON' | translate }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
 <section class="container text-center my-5">
-  <h2 class="fw-bold mb-4">How It Works</h2>
+  <h2 class="fw-bold mb-4">{{ 'HOME.HOW.TITLE' | translate }}</h2>
   <div class="row justify-content-center">
     <div class="col-md-4 mb-4">
       <div class="mb-3">
         <span class="badge bg-danger-subtle text-danger fs-5 rounded-circle py-2 px-3">1</span>
       </div>
-      <h6 class="fw-bold">Find</h6>
-      <p class="text-muted">Search for workspaces in your area and filter them based on your needs</p>
+      <h6 class="fw-bold">{{ 'HOME.HOW.STEP1.TITLE' | translate }}</h6>
+      <p class="text-muted">{{ 'HOME.HOW.STEP1.TEXT' | translate }}</p>
     </div>
     <div class="col-md-4 mb-4">
       <div class="mb-3">
         <span class="badge bg-danger-subtle text-danger fs-5 rounded-circle py-2 px-3">2</span>
       </div>
-      <h6 class="fw-bold">Book</h6>
-      <p class="text-muted">Choose your date and time and book your spot with just a few clicks</p>
+      <h6 class="fw-bold">{{ 'HOME.HOW.STEP2.TITLE' | translate }}</h6>
+      <p class="text-muted">{{ 'HOME.HOW.STEP2.TEXT' | translate }}</p>
     </div>
     <div class="col-md-4 mb-4">
       <div class="mb-3">
         <span class="badge bg-danger-subtle text-danger fs-5 rounded-circle py-2 px-3">3</span>
       </div>
-      <h6 class="fw-bold">Review</h6>
-      <p class="text-muted">Share your experience and help other freelancers find the perfect spot</p>
+      <h6 class="fw-bold">{{ 'HOME.HOW.STEP3.TITLE' | translate }}</h6>
+      <p class="text-muted">{{ 'HOME.HOW.STEP3.TEXT' | translate }}</p>
     </div>
   </div>
 </section>
+
 <footer class="text-center py-4 border-top mt-5">
   <nav class="mb-2">
-    <a routerLink="/explore" class="text-decoration-none mx-2 text-muted">Explore</a>
-    <a routerLink="/about-us" class="text-decoration-none mx-2 text-muted">About Us</a>
-    <a routerLink="/contact" class="text-decoration-none mx-2 text-muted">Contact</a>
+    <a routerLink="/explore" class="text-decoration-none mx-2 text-muted">{{ 'NAV.EXPLORE' | translate }}</a>
+    <a routerLink="/about-us" class="text-decoration-none mx-2 text-muted">{{ 'NAV.ABOUT' | translate }}</a>
+    <a routerLink="/contact" class="text-decoration-none mx-2 text-muted">{{ 'NAV.CONTACT' | translate }}</a>
   </nav>
-  <small class="text-muted">© 2025 WorkSpace. All rights reserved.</small>
+  <small class="text-muted">© 2025 WorkSpace. {{ 'FOOTER.COPYRIGHT' | translate }}</small>
 </footer>

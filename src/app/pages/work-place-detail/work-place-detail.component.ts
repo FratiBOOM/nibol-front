@@ -7,11 +7,14 @@ import { RouterModule } from '@angular/router';
 import { Booking } from '../../models/booking';
 import { FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-workplace-details',
   standalone: true,
-  imports: [CommonModule, RouterModule, FormsModule],
+  imports: [CommonModule, RouterModule, FormsModule, TranslateModule],
   templateUrl: './work-place-detail.component.html',
   styleUrls: ['./work-place-detail.component.css']
 })

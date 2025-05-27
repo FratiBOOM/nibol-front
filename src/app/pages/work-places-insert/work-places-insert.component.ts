@@ -6,14 +6,17 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { Router } from '@angular/router';
-import { WorkPlacesService } from '../../services/workplaces.service'; // Assicurati che il percorso sia corretto
+import { WorkPlacesService } from '../../services/workplaces.service';
+import { TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-add-workplace',
   templateUrl: './work-places-insert.component.html',
   styleUrls: ['./work-places-insert.component.css'],
   standalone: true,
-  imports: [ReactiveFormsModule, HttpClientModule, CommonModule, RouterModule]
+  imports: [ReactiveFormsModule, HttpClientModule, CommonModule, RouterModule, TranslateModule],
 })
 export class WorkPlacesInsertComponent {
   workplaceForm: FormGroup; // ✅ NOME CAMBIATO!

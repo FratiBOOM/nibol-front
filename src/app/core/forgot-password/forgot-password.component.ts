@@ -3,32 +3,51 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslateService } from '@ngx-translate/core';
+import Swal from 'sweetalert2';
 
 
 @Component({
   selector: 'app-forgot-password',
-  imports: [CommonModule, FormsModule, RouterModule],
+  imports: [CommonModule, FormsModule, RouterModule, TranslateModule],
   templateUrl: './forgot-password.component.html',
   styleUrl: './forgot-password.component.css'
 })
 export class ForgotPasswordComponent {
   forgotPasswordData = { email: '' };
 
-  constructor(private authService: AuthService) { }
+  constructor(private authService: AuthService,private translate: TranslateService) { }
 
 
-onSubmit(): void {
+ onSubmit(): void {
   this.authService.forgotPassword(this.forgotPasswordData.email).subscribe({
-    next: res => {
-      alert('If the email exists in our system, you will receive a password reset link.');
+    next: () => {
+      this.translate.get([
+        'FORGOT.SUCCESS_TITLE',
+        'FORGOT.SUCCESS_TEXT'
+      ]).subscribe(translations => {
+        Swal.fire({
+          icon: 'success',
+          title: translations['FORGOT.SUCCESS_TITLE'],
+          text: translations['FORGOT.SUCCESS_TEXT'],
+          confirmButtonColor: '#3085d6'
+        });
+      });
     },
-    error: err => {
-      alert('No email was sent. The service is not implemented or an error occurred.');
+    error: () => {
+      this.translate.get([
+        'FORGOT.ERROR_TITLE',
+        'FORGOT.ERROR_TEXT'
+      ]).subscribe(translations => {
+        Swal.fire({
+          icon: 'error',
+          title: translations['FORGOT.ERROR_TITLE'],
+          text: translations['FORGOT.ERROR_TEXT']
+        });
+      });
     }
   });
 }
-
-
-
 
 }

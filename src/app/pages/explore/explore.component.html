@@ -1,13 +1,12 @@
 <section class="container my-5">
-  <h2 class="fw-bold mb-4">Explore Workspaces</h2>
+  <h2 class="fw-bold mb-4">{{ 'EXPLORE.TITLE' | translate }}</h2>
 
-<select class="form-select w-auto mb-4" [(ngModel)]="selectedCity">
-  <option value="">Search by city</option>
-  <option *ngFor="let city of uniqueCities" [value]="city">
-    {{ city }}
-  </option>
-</select>
-
+  <select class="form-select w-auto mb-4" [(ngModel)]="selectedCity">
+    <option value="">{{ 'EXPLORE.SEARCH_BY_CITY' | translate }}</option>
+    <option *ngFor="let city of uniqueCities" [value]="city">
+      {{ city }}
+    </option>
+  </select>
 
   <div class="row g-4">
     <div class="col-md-4" *ngFor="let place of filteredWorkspaces">
@@ -29,13 +28,13 @@
 
           <div class="d-flex flex-wrap gap-2 mb-2">
             <span *ngIf="place.wifiDisponibile" class="badge bg-danger-subtle text-danger fw-semibold">
-              <i class="bi bi-wifi me-1"></i> Fast Wi-Fi
+              <i class="bi bi-wifi me-1"></i> {{ 'EXPLORE.FAST_WIFI' | translate }}
             </span>
             <span *ngIf="place.preseCorrente" class="badge bg-danger-subtle text-danger fw-semibold">
-              <i class="bi bi-plug me-1"></i> Power Outlets
+              <i class="bi bi-plug me-1"></i> {{ 'EXPLORE.POWER_OUTLETS' | translate }}
             </span>
             <span *ngIf="place.ambienteSilenzioso" class="badge bg-danger-subtle text-danger fw-semibold">
-              <i class="bi bi-volume-down me-1"></i> Quiet
+              <i class="bi bi-volume-down me-1"></i> {{ 'EXPLORE.QUIET' | translate }}
             </span>
           </div>
 
@@ -45,7 +44,9 @@
           </p>
 
           <div class="d-flex justify-content-end">
-            <button class="btn button-detail px-3" [routerLink]="['/work-place', place.id]">Details</button>
+            <button class="btn button-detail px-3" [routerLink]="['/work-place', place.id]">
+              {{ 'EXPLORE.DETAILS' | translate }}
+            </button>
           </div>
         </div>
       </div>
@@ -53,6 +54,6 @@
   </div>
 
   <div class="text-center mt-4">
-    <button class="btn btn-outline-dark">Load More</button>
+    <button class="btn btn-outline-dark">{{ 'EXPLORE.LOAD_MORE' | translate }}</button>
   </div>
 </section>

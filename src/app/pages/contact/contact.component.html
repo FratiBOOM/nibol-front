@@ -1,67 +1,81 @@
 <section class="container my-5">
-  <h2 class="text-center fw-bold">Contact Us</h2>
-  <p class="text-center text-muted mb-5">Have a question, suggestion, or need help? We're here to assist you.</p>
+  <h2 class="text-center fw-bold">{{ 'CONTACT.TITLE' | translate }}</h2>
+  <p class="text-center text-muted mb-5">{{ 'CONTACT.SUBTITLE' | translate }}</p>
 
   <div class="row g-4">
     <!-- Left Column: Contact Info -->
     <div class="col-md-4">
       <div class="border rounded-4 p-4 mb-4">
-        <h5 class="fw-semibold mb-3">Get in Touch</h5>
-        <p><strong>Email</strong><br>{{'hello@workspace.com'}}<br>{{'support@workspace.com'}}</p>
-        <p><strong>Phone</strong><br>+39 333 333-4567<br>Mon–Fri, 9 AM – 6 PM EST</p>
-        <p><strong>Address</strong><br>Via A. Campanini 4<br>Milano<br>Italia</p>
-        <p><strong>Business Hours</strong><br>
-          Monday – Friday: 9:00 AM – 6:00 PM<br>
-          Saturday: Closed<br>
-          Sunday: Closed
+        <h5 class="fw-semibold mb-3">{{ 'CONTACT.GET_IN_TOUCH' | translate }}</h5>
+        <p>
+          <strong>{{ 'CONTACT.EMAIL' | translate }}</strong><br>
+          {{'hello@workspace.com'}}<br>
+          {{'support@workspace.com'}}
+        </p>
+        <p>
+          <strong>{{ 'CONTACT.PHONE' | translate }}</strong><br>
+          +39 333 333-4567<br>
+          {{ 'CONTACT.MON_FRI' | translate }}
+        </p>
+        <p>
+          <strong>{{ 'CONTACT.ADDRESS' | translate }}</strong><br>
+          Via A. Campanini 4<br>
+          Milano<br>
+          Italia
+        </p>
+        <p>
+          <strong>{{ 'CONTACT.HOURS' | translate }}</strong><br>
+          {{ 'CONTACT.MON_FRI' | translate }}<br>
+          {{ 'CONTACT.SATURDAY' | translate }}<br>
+          {{ 'CONTACT.SUNDAY' | translate }}
         </p>
       </div>
 
       <div class="border rounded-4 p-4">
-        <h5 class="fw-semibold mb-3">Quick Help</h5>
-        <p><i class="bi bi-question-circle me-1 text-danger"></i> FAQ</p>
-        <p><i class="bi bi-chat-dots me-1 text-danger"></i> Live Chat</p>
-        <p><i class="bi bi-building me-1 text-danger"></i> Venue Owners</p>
+        <h5 class="fw-semibold mb-3">{{ 'CONTACT.HELP' | translate }}</h5>
+        <p><i class="bi bi-question-circle me-1 text-danger"></i> {{ 'CONTACT.FAQ' | translate }}</p>
+        <p><i class="bi bi-chat-dots me-1 text-danger"></i> {{ 'CONTACT.CHAT' | translate }}</p>
+        <p><i class="bi bi-building me-1 text-danger"></i> {{ 'CONTACT.OWNERS' | translate }}</p>
       </div>
     </div>
 
     <!-- Right Column: Contact Form -->
     <div class="col-md-8">
       <div class="border rounded-4 p-4">
-        <h5 class="fw-semibold mb-4">Send us a Message</h5>
+        <h5 class="fw-semibold mb-4">{{ 'CONTACT.FORM_TITLE' | translate }}</h5>
         <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
           <div class="row mb-3">
             <div class="col">
-              <label class="form-label">Full Name *</label>
-              <input type="text" formControlName="fullName" class="form-control" placeholder="Your full name">
+              <label class="form-label">{{ 'CONTACT.FULLNAME' | translate }}</label>
+              <input type="text" formControlName="fullName" class="form-control" placeholder="{{ 'CONTACT.FULLNAME' | translate }}">
             </div>
             <div class="col">
-              <label class="form-label">Email Address *</label>
+              <label class="form-label">{{ 'CONTACT.EMAIL_ADDRESS' | translate }}</label>
               <input type="email" formControlName="email" class="form-control" placeholder="your.email@example.com">
             </div>
           </div>
 
           <div class="mb-3">
-            <label class="form-label">Category</label>
+            <label class="form-label">{{ 'CONTACT.CATEGORY' | translate }}</label>
             <select formControlName="category" class="form-select">
-              <option value="">Select a category</option>
-              <option value="feedback">Feedback</option>
-              <option value="support">Support</option>
-              <option value="partnership">Partnership</option>
+              <option value="">{{ 'CONTACT.CATEGORY_SELECT' | translate }}</option>
+              <option value="feedback">{{ 'CONTACT.CATEGORY_FEEDBACK' | translate }}</option>
+              <option value="support">{{ 'CONTACT.CATEGORY_SUPPORT' | translate }}</option>
+              <option value="partnership">{{ 'CONTACT.CATEGORY_PARTNERSHIP' | translate }}</option>
             </select>
           </div>
 
           <div class="mb-3">
-            <label class="form-label">Subject *</label>
-            <input type="text" formControlName="subject" class="form-control" placeholder="Brief description of your inquiry">
+            <label class="form-label">{{ 'CONTACT.SUBJECT' | translate }}</label>
+            <input type="text" formControlName="subject" class="form-control" placeholder="{{ 'CONTACT.PLACEHOLDER_SUBJECT' | translate }}">
           </div>
 
           <div class="mb-3">
-            <label class="form-label">Message *</label>
-            <textarea rows="5" formControlName="message" class="form-control" placeholder="Please provide details about your inquiry..."></textarea>
+            <label class="form-label">{{ 'CONTACT.MESSAGE' | translate }}</label>
+            <textarea rows="5" formControlName="message" class="form-control" placeholder="{{ 'CONTACT.PLACEHOLDER_MESSAGE' | translate }}"></textarea>
           </div>
 
-          <button type="submit" class="btn button-contact w-100">Send Message</button>
+          <button type="submit" class="btn button-contact w-100">{{ 'CONTACT.BUTTON' | translate }}</button>
         </form>
       </div>
 
@@ -69,20 +83,20 @@
       <div class="row mt-4">
         <div class="col-md-6">
           <div class="border rounded-4 p-4 h-100">
-            <h6 class="fw-semibold">For Freelancers</h6>
-            <p class="text-muted small mb-1">• Workspace recommendations</p>
-            <p class="text-muted small mb-1">• Booking assistance</p>
-            <p class="text-muted small mb-1">• Account support</p>
-            <p class="text-muted small">• Technical issues</p>
+            <h6 class="fw-semibold">{{ 'CONTACT.INFO_FREELANCERS.TITLE' | translate }}</h6>
+            <p class="text-muted small mb-1">{{ 'CONTACT.INFO_FREELANCERS.POINT1' | translate }}</p>
+            <p class="text-muted small mb-1">{{ 'CONTACT.INFO_FREELANCERS.POINT2' | translate }}</p>
+            <p class="text-muted small mb-1">{{ 'CONTACT.INFO_FREELANCERS.POINT3' | translate }}</p>
+            <p class="text-muted small">{{ 'CONTACT.INFO_FREELANCERS.POINT4' | translate }}</p>
           </div>
         </div>
         <div class="col-md-6">
           <div class="border rounded-4 p-4 h-100">
-            <h6 class="fw-semibold">For Venue Owners</h6>
-            <p class="text-muted small mb-1">• Partnership opportunities</p>
-            <p class="text-muted small mb-1">• Listing optimization</p>
-            <p class="text-muted small mb-1">• Booking management</p>
-            <p class="text-muted small">• Marketing support</p>
+            <h6 class="fw-semibold">{{ 'CONTACT.INFO_OWNERS.TITLE' | translate }}</h6>
+            <p class="text-muted small mb-1">{{ 'CONTACT.INFO_OWNERS.POINT1' | translate }}</p>
+            <p class="text-muted small mb-1">{{ 'CONTACT.INFO_OWNERS.POINT2' | translate }}</p>
+            <p class="text-muted small mb-1">{{ 'CONTACT.INFO_OWNERS.POINT3' | translate }}</p>
+            <p class="text-muted small">{{ 'CONTACT.INFO_OWNERS.POINT4' | translate }}</p>
           </div>
         </div>
       </div>

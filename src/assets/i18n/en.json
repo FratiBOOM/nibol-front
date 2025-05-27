@@ -1,0 +1,274 @@
+{
+  "HOME": {
+    "TITLE": "WorkSpace",
+    "SUBTITLE": "Find, review and book the best workspaces for freelancers",
+    "FREELANCERS": {
+      "TITLE": "For Freelancers",
+      "OPT1": "Find comfortable workspaces near you",
+      "OPT2": "Read reviews from other freelancers",
+      "OPT3": "Book your spot in advance",
+      "OPT4": "Share your experience with the community",
+      "BUTTON": "Explore Spaces"
+    },
+    "OWNERS": {
+      "TITLE": "For Owners",
+      "OPT1": "Register your venue on the platform",
+      "OPT2": "Attract new freelance customers",
+      "OPT3": "Manage bookings easily",
+      "OPT4": "Receive feedback and improve your service",
+      "BUTTON": "Register Your Venue"
+    },
+    "HOW": {
+      "TITLE": "How It Works",
+      "STEP1": {
+        "TITLE": "Find",
+        "TEXT": "Search for workspaces in your area and filter them based on your needs"
+      },
+      "STEP2": {
+        "TITLE": "Book",
+        "TEXT": "Choose your date and time and book your spot with just a few clicks"
+      },
+      "STEP3": {
+        "TITLE": "Review",
+        "TEXT": "Share your experience and help other freelancers find the perfect spot"
+      }
+    }
+  },
+  "ABOUT": {
+  "TITLE": "About WorkSpace",
+  "SUBTITLE": "We're on a mission to connect freelancers with the perfect workspaces, creating a community where productivity and comfort meet.",
+  "MISSION": {
+    "TITLE": "Our Mission",
+    "TEXT": "To revolutionize the way freelancers work by providing easy access to quality workspaces. We believe that the right environment can unlock creativity and boost productivity."
+  },
+  "VISION": {
+    "TITLE": "Our Vision",
+    "TEXT": "A world where every freelancer has access to inspiring workspaces that fuel their passion and drive their success."
+  },
+  "STORY": {
+    "TITLE": "Our Story",
+    "TEXT": "WorkSpace was born from a simple observation: freelancers spend countless hours searching for the perfect place to work. Shared by a team of freelancers, WorkSpace started as a solution to share great spots and evolved into a complete platform connecting users with great places to work."
+  },
+  "WHY": {
+    "TITLE": "Why Choose WorkSpace?",
+    "COMMUNITY": {
+      "TITLE": "Community-Driven",
+      "TEXT": "Built by freelancers, for freelancers. Designed to foster real needs and real feedback."
+    },
+    "QUALITY": {
+      "TITLE": "Quality Assured",
+      "TEXT": "Each venue is reviewed carefully to ensure high-quality experiences."
+    },
+    "FREE": {
+      "TITLE": "Always Free",
+      "TEXT": "WorkSpace is and always will be free for freelancers. No hidden costs."
+    }
+  },
+  "TEAM": {
+    "TITLE": "Our Team",
+    "SARAH": {
+      "NAME": "Sarah Johnson",
+      "ROLE": "Co-Founder & CEO",
+      "DESC": "Freelance designer and creative leader with a passion for coworking communities."
+    },
+    "MARCO": {
+      "NAME": "Marco Rodriguez",
+      "ROLE": "Co-Founder & CTO",
+      "DESC": "Full-stack developer and tech lead with years of experience in building scalable platforms."
+    },
+    "EMMA": {
+      "NAME": "Emma Chen",
+      "ROLE": "Head of Community",
+      "DESC": "Community manager focused on engagement, support, and ambassador programs."
+    }
+  },
+  "JOIN": {
+    "TEXT": "Whether you're a freelancer looking for the perfect workplace or a venue owner wanting to welcome our community, we'd love to have you join us.",
+    "EXPLORE": "Explore Workspaces",
+    "ADD": "Add Your Venue"
+  }
+},
+  "NAV": {
+    "EXPLORE": "Explore",
+    "ABOUT": "About Us",
+    "CONTACT": "Contact",
+    "LOGIN": "Login",
+    "LOGOUT": "Logout",
+    "SIGNUP": "Signup"
+  },
+  "FOOTER": {
+    "COPYRIGHT": "All rights reserved"
+  },
+  "CONTACT": {
+  "TITLE": "Contact Us",
+  "SUBTITLE": "Have a question, suggestion, or need help? We're here to assist you.",
+  "GET_IN_TOUCH": "Get in Touch",
+  "EMAIL": "Email",
+  "PHONE": "Phone",
+  "ADDRESS": "Address",
+  "HOURS": "Business Hours",
+  "MON_FRI": "Monday – Friday: 9:00 AM – 6:00 PM",
+  "SATURDAY": "Saturday: Closed",
+  "SUNDAY": "Sunday: Closed",
+  "HELP": "Quick Help",
+  "FAQ": "FAQ",
+  "CHAT": "Live Chat",
+  "OWNERS": "Venue Owners",
+  "FORM_TITLE": "Send us a Message",
+  "FULLNAME": "Full Name *",
+  "EMAIL_ADDRESS": "Email Address *",
+  "CATEGORY": "Category",
+  "CATEGORY_SELECT": "Select a category",
+  "CATEGORY_FEEDBACK": "Feedback",
+  "CATEGORY_SUPPORT": "Support",
+  "CATEGORY_PARTNERSHIP": "Partnership",
+  "SUBJECT": "Subject *",
+  "MESSAGE": "Message *",
+  "PLACEHOLDER_SUBJECT": "Brief description of your inquiry",
+  "PLACEHOLDER_MESSAGE": "Please provide details about your inquiry...",
+  "BUTTON": "Send Message",
+  "INFO_FREELANCERS": {
+    "TITLE": "For Freelancers",
+    "POINT1": "• Workspace recommendations",
+    "POINT2": "• Booking assistance",
+    "POINT3": "• Account support",
+    "POINT4": "• Technical issues"
+  },
+  "INFO_OWNERS": {
+    "TITLE": "For Venue Owners",
+    "POINT1": "• Partnership opportunities",
+    "POINT2": "• Listing optimization",
+    "POINT3": "• Booking management",
+    "POINT4": "• Marketing support"
+  }
+},
+"INSERT": {
+  "TITLE": "Venue Information",
+  "NAME": "Venue name",
+  "ADDRESS": "Address",
+  "CITY": "City",
+  "DESCRIPTION": "Description",
+  "DESCRIPTION_PLACEHOLDER": "Describe your venue and why it's suitable for freelancers...",
+  "OPENING_TIME": "Opening time",
+  "CLOSING_TIME": "Closing time",
+  "WEBSITE": "Website",
+  "PHONE": "Phone",
+  "AMENITIES": "Available amenities",
+  "WIFI": "Wi-Fi",
+  "POWER": "Power outlets",
+  "QUIET": "Quiet environment",
+  "NOISE_LEVEL": "Noise level",
+  "PRICE_RANGE": "Price range",
+  "PRICE_BUDGET": "€ (Budget)",
+  "PRICE_STANDARD": "€€ (Standard)",
+  "PRICE_PREMIUM": "€€€ (Premium)",
+  "BUTTON_ADD": "Add workspace",
+  "BUTTON_EXPLORE": "Explore Spaces"
+},
+"EXPLORE": {
+  "TITLE": "Explore Workspaces",
+  "SEARCH_BY_CITY": "Search by city",
+  "FAST_WIFI": "Fast Wi-Fi",
+  "POWER_OUTLETS": "Power Outlets",
+  "QUIET": "Quiet",
+  "DETAILS": "Details",
+  "LOAD_MORE": "Load More"
+},
+"DETAIL": {
+  "TAB": {
+    "INFO": "Information",
+    "REVIEWS": "Reviews"
+  },
+  "DESCRIPTION": "Description",
+  "AMENITIES": "Amenities",
+  "AMENITY": {
+    "WIFI": "✔ Fast Wi-Fi",
+    "POWER": "✔ Power Outlets",
+    "QUIET": "✔ Quiet Environment"
+  },
+  "DETAILS": "Details",
+  "HOURS": "Hours",
+  "NOISE": "Noise Level",
+  "PRICE": "Price Range",
+  "CONTACT": "Contact",
+  "VISIT": "Visit Website",
+  "DELETE": "Delete",
+  "REVIEW_TITLE": "Leave a review",
+  "RATING": "Rating",
+  "EMAIL": "Email",
+  "COMMENT": "Comment",
+  "POST": "Post review",
+  "BOOKING_TITLE": "Book this space",
+  "DATE": "Select a date",
+  "START": "Start time",
+  "END": "End time",
+  "USER_EMAIL": "Your Email",
+  "BOOK_BTN": "Book now",
+  "BOOK_WARNING": "Selected time is outside the venue’s opening hours"
+},
+"FORGOT": {
+  "TITLE": "Have you forgotten your password?",
+  "REMEMBER": "Have you remembered your password?",
+  "LOGIN": "Login",
+  "PLACEHOLDER_EMAIL": "Insert email",
+  "BUTTON": "Send an email",
+    "SUCCESS_TITLE": "Email sent",
+  "SUCCESS_TEXT": "If the email exists in our system, you will receive a password reset link.",
+  "ERROR_TITLE": "Error",
+  "ERROR_TEXT": "No email was sent. The service is not implemented or an error occurred."
+},
+"LOGIN_PAGE": {
+  "TITLE": "Login",
+  "NO_ACCOUNT": "Don't you have an account?",
+  "SIGNUP": "Signup",
+  "PLACEHOLDER_EMAIL": "Insert email",
+  "PLACEHOLDER_PASSWORD": "Insert password",
+  "BUTTON": "Login",
+  "FORGOT": "Forgot password?"
+},
+"SIGNUP_PAGE": {
+  "TITLE": "Signup",
+  "ALREADY": "Already registered?",
+  "LOGIN": "Login",
+  "PLACEHOLDER_NAME": "Insert name",
+  "PLACEHOLDER_SURNAME": "Insert surname",
+  "PLACEHOLDER_EMAIL": "Insert email",
+  "PLACEHOLDER_PASSWORD": "Insert password",
+  "TERMS_LABEL": "Agree to our",
+  "TERMS_LINK": "Terms and Conditions",
+  "TERMS_ERROR": "You must accept the terms and conditions to proceed.",
+  "BUTTON": "Create account"
+},
+"RESET_PASSWORD_PAGE": {
+  "TITLE": "Enter the new password here",
+  "PLACEHOLDER_PASSWORD": "Insert password",
+  "PLACEHOLDER_CONFIRM": "Confirm password",
+  "BUTTON": "Send email"
+},
+"LOGIN": {
+  "SUCCESS_TITLE": "Welcome back!",
+  "SUCCESS_TEXT": "Login successful.",
+  "ERROR_TITLE": "Login failed",
+  "ERROR_TEXT": "Please check your credentials."
+},
+"REGISTER": {
+  "TERMS_TITLE": "Terms Required",
+  "TERMS_TEXT": "You must accept the terms and conditions to proceed.",
+  "SUCCESS_TITLE": "Registration successful!",
+  "SUCCESS_TEXT": "Welcome to WorkSpace.",
+  "ERROR_TITLE": "Registration failed",
+  "ERROR_TEXT": "Something went wrong. Please try again later."
+},
+"RESET": {
+  "MISMATCH_TITLE": "Password Mismatch",
+  "MISMATCH_TEXT": "Passwords do not match.",
+  "SUCCESS_TITLE": "Password Reset",
+  "SUCCESS_TEXT": "Your password has been reset successfully.",
+  "ERROR_TITLE": "Error",
+  "ERROR_TEXT": "Error resetting password. Please try again."
+}
+
+
+
+
+}

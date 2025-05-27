@@ -1,0 +1,273 @@
+{
+  "HOME": {
+    "TITLE": "WorkSpace",
+    "SUBTITLE": "Trova, recensisci e prenota i migliori spazi di lavoro per freelancer",
+    "FREELANCERS": {
+      "TITLE": "Per Freelancer",
+      "OPT1": "Trova spazi di lavoro confortevoli vicino a te",
+      "OPT2": "Leggi le recensioni di altri freelancer",
+      "OPT3": "Prenota il tuo posto in anticipo",
+      "OPT4": "Condividi la tua esperienza con la community",
+      "BUTTON": "Esplora gli Spazi"
+    },
+    "OWNERS": {
+      "TITLE": "Per Proprietari",
+      "OPT1": "Registra il tuo locale sulla piattaforma",
+      "OPT2": "Attira nuovi clienti freelancer",
+      "OPT3": "Gestisci facilmente le prenotazioni",
+      "OPT4": "Ricevi feedback e migliora il tuo servizio",
+      "BUTTON": "Registra il Tuo Locale"
+    },
+    "HOW": {
+      "TITLE": "Come Funziona",
+      "STEP1": {
+        "TITLE": "Trova",
+        "TEXT": "Cerca spazi di lavoro nella tua zona e filtrali in base alle tue esigenze"
+      },
+      "STEP2": {
+        "TITLE": "Prenota",
+        "TEXT": "Scegli la data e l'orario e prenota il tuo posto in pochi clic"
+      },
+      "STEP3": {
+        "TITLE": "Recensisci",
+        "TEXT": "Condividi la tua esperienza e aiuta altri freelancer a trovare il posto perfetto"
+      }
+    }
+  },
+  "ABOUT": {
+    "TITLE": "Informazioni su WorkSpace",
+    "SUBTITLE": "La nostra missione è connettere i freelancer con gli spazi di lavoro ideali, creando una community dove produttività e comfort si incontrano.",
+    "MISSION": {
+      "TITLE": "La Nostra Missione",
+      "TEXT": "Rivoluzionare il modo in cui i freelancer lavorano offrendo un accesso semplice a spazi di qualità. Crediamo che l'ambiente giusto possa sbloccare la creatività e aumentare la produttività."
+    },
+    "VISION": {
+      "TITLE": "La Nostra Visione",
+      "TEXT": "Un mondo in cui ogni freelancer ha accesso a spazi stimolanti che alimentano la passione e guidano il successo."
+    },
+    "STORY": {
+      "TITLE": "La Nostra Storia",
+      "TEXT": "WorkSpace nasce da una semplice osservazione: i freelancer trascorrono ore a cercare il posto perfetto per lavorare. Creato da un team di freelancer, WorkSpace è nato per condividere i migliori luoghi ed è diventato una piattaforma completa che connette gli utenti con spazi ideali."
+    },
+    "WHY": {
+      "TITLE": "Perché Scegliere WorkSpace?",
+      "COMMUNITY": {
+        "TITLE": "Guidato dalla Community",
+        "TEXT": "Creato da freelancer, per freelancer. Progettato per rispondere a esigenze reali e raccogliere feedback autentici."
+      },
+      "QUALITY": {
+        "TITLE": "Qualità Garantita",
+        "TEXT": "Ogni locale è attentamente recensito per garantire esperienze di alta qualità."
+      },
+      "FREE": {
+        "TITLE": "Sempre Gratuito",
+        "TEXT": "WorkSpace è e sarà sempre gratuito per i freelancer. Nessun costo nascosto."
+      }
+    },
+    "TEAM": {
+      "TITLE": "Il Nostro Team",
+      "SARAH": {
+        "NAME": "Sarah Johnson",
+        "ROLE": "Co-Fondatrice & CEO",
+        "DESC": "Designer freelance e leader creativa con una passione per le community di coworking."
+      },
+      "MARCO": {
+        "NAME": "Marco Rodriguez",
+        "ROLE": "Co-Fondatore & CTO",
+        "DESC": "Sviluppatore full-stack con anni di esperienza nella creazione di piattaforme scalabili."
+      },
+      "EMMA": {
+        "NAME": "Emma Chen",
+        "ROLE": "Responsabile Community",
+        "DESC": "Manager community specializzata in coinvolgimento, supporto e programmi ambassador."
+      }
+    },
+    "JOIN": {
+      "TEXT": "Che tu sia un freelancer in cerca del posto perfetto o un proprietario che vuole accogliere la nostra community, unisciti a noi.",
+      "EXPLORE": "Esplora gli Spazi",
+      "ADD": "Aggiungi il Tuo Locale"
+    }
+  },
+  "NAV": {
+    "EXPLORE": "Esplora",
+    "ABOUT": "Chi Siamo",
+    "CONTACT": "Contatti",
+    "LOGIN": "Accedi",
+    "LOGOUT": "Esci",
+    "SIGNUP": "Registrati"
+  },
+  "FOOTER": {
+    "COPYRIGHT": "Tutti i diritti riservati"
+  },
+  "CONTACT": {
+  "TITLE": "Contattaci",
+  "SUBTITLE": "Hai una domanda, un suggerimento o bisogno di aiuto? Siamo qui per aiutarti.",
+  "GET_IN_TOUCH": "Contattaci",
+  "EMAIL": "Email",
+  "PHONE": "Telefono",
+  "ADDRESS": "Indirizzo",
+  "HOURS": "Orari di Apertura",
+  "MON_FRI": "Lunedì – Venerdì: 9:00 – 18:00",
+  "SATURDAY": "Sabato: Chiuso",
+  "SUNDAY": "Domenica: Chiuso",
+  "HELP": "Assistenza Rapida",
+  "FAQ": "Domande Frequenti",
+  "CHAT": "Chat Live",
+  "OWNERS": "Proprietari di Locali",
+  "FORM_TITLE": "Scrivici un Messaggio",
+  "FULLNAME": "Nome e Cognome *",
+  "EMAIL_ADDRESS": "Indirizzo Email *",
+  "CATEGORY": "Categoria",
+  "CATEGORY_SELECT": "Seleziona una categoria",
+  "CATEGORY_FEEDBACK": "Feedback",
+  "CATEGORY_SUPPORT": "Assistenza",
+  "CATEGORY_PARTNERSHIP": "Collaborazione",
+  "SUBJECT": "Oggetto *",
+  "MESSAGE": "Messaggio *",
+  "PLACEHOLDER_SUBJECT": "Descrizione breve della tua richiesta",
+  "PLACEHOLDER_MESSAGE": "Inserisci i dettagli della tua richiesta...",
+  "BUTTON": "Invia Messaggio",
+  "INFO_FREELANCERS": {
+    "TITLE": "Per Freelancer",
+    "POINT1": "• Consigli su spazi di lavoro",
+    "POINT2": "• Assistenza prenotazioni",
+    "POINT3": "• Supporto account",
+    "POINT4": "• Problemi tecnici"
+  },
+  "INFO_OWNERS": {
+    "TITLE": "Per Proprietari di Locali",
+    "POINT1": "• Opportunità di collaborazione",
+    "POINT2": "• Ottimizzazione annunci",
+    "POINT3": "• Gestione prenotazioni",
+    "POINT4": "• Supporto marketing"
+  }
+},
+"INSERT": {
+  "TITLE": "Informazioni sul locale",
+  "NAME": "Nome del locale",
+  "ADDRESS": "Indirizzo",
+  "CITY": "Città",
+  "DESCRIPTION": "Descrizione",
+  "DESCRIPTION_PLACEHOLDER": "Descrivi il tuo locale e perché è adatto ai freelance...",
+  "OPENING_TIME": "Orario di apertura",
+  "CLOSING_TIME": "Orario di chiusura",
+  "WEBSITE": "Sito web",
+  "PHONE": "Telefono",
+  "AMENITIES": "Servizi disponibili",
+  "WIFI": "Wi-Fi",
+  "POWER": "Prese di corrente",
+  "QUIET": "Ambiente silenzioso",
+  "NOISE_LEVEL": "Livello di rumore",
+  "PRICE_RANGE": "Fascia di prezzo",
+  "PRICE_BUDGET": "€ (Economico)",
+  "PRICE_STANDARD": "€€ (Standard)",
+  "PRICE_PREMIUM": "€€€ (Premium)",
+  "BUTTON_ADD": "Aggiungi spazio di lavoro",
+  "BUTTON_EXPLORE": "Esplora gli spazi"
+},
+"EXPLORE": {
+  "TITLE": "Esplora gli Spazi di Lavoro",
+  "SEARCH_BY_CITY": "Cerca per città",
+  "FAST_WIFI": "Wi-Fi veloce",
+  "POWER_OUTLETS": "Prese di corrente",
+  "QUIET": "Silenzioso",
+  "DETAILS": "Dettagli",
+  "LOAD_MORE": "Carica altri"
+},
+"DETAIL": {
+  "TAB": {
+    "INFO": "Informazioni",
+    "REVIEWS": "Recensioni"
+  },
+  "DESCRIPTION": "Descrizione",
+  "AMENITIES": "Servizi",
+  "AMENITY": {
+    "WIFI": "✔ Wi-Fi veloce",
+    "POWER": "✔ Prese di corrente",
+    "QUIET": "✔ Ambiente silenzioso"
+  },
+  "DETAILS": "Dettagli",
+  "HOURS": "Orari",
+  "NOISE": "Livello di rumore",
+  "PRICE": "Fascia di prezzo",
+  "CONTACT": "Contatti",
+  "VISIT": "Visita il sito",
+  "DELETE": "Elimina",
+  "REVIEW_TITLE": "Lascia una recensione",
+  "RATING": "Valutazione",
+  "EMAIL": "Email",
+  "COMMENT": "Commento",
+  "POST": "Invia recensione",
+  "BOOKING_TITLE": "Prenota questo spazio",
+  "DATE": "Seleziona una data",
+  "START": "Ora inizio",
+  "END": "Ora fine",
+  "USER_EMAIL": "La tua Email",
+  "BOOK_BTN": "Prenota ora",
+  "BOOK_WARNING": "L’orario selezionato è fuori dall’orario di apertura del locale"
+},
+"FORGOT": {
+  "TITLE": "Hai dimenticato la password?",
+  "REMEMBER": "Hai ricordato la password?",
+  "LOGIN": "Accedi",
+  "PLACEHOLDER_EMAIL": "Inserisci l'email",
+  "BUTTON": "Invia un'email",
+   "SUCCESS_TITLE": "Email inviata",
+  "SUCCESS_TEXT": "Se l'email esiste nel nostro sistema, riceverai un link per reimpostare la password.",
+  "ERROR_TITLE": "Errore",
+  "ERROR_TEXT": "Nessuna email inviata. Il servizio non è implementato o si è verificato un errore."
+},
+"LOGIN_PAGE": {
+  "TITLE": "Accedi",
+  "NO_ACCOUNT": "Non hai un account?",
+  "SIGNUP": "Registrati",
+  "PLACEHOLDER_EMAIL": "Inserisci l'email",
+  "PLACEHOLDER_PASSWORD": "Inserisci la password",
+  "BUTTON": "Accedi",
+  "FORGOT": "Hai dimenticato la password?"
+},
+"SIGNUP_PAGE": {
+  "TITLE": "Registrazione",
+  "ALREADY": "Sei già registrato?",
+  "LOGIN": "Accedi",
+  "PLACEHOLDER_NAME": "Inserisci il nome",
+  "PLACEHOLDER_SURNAME": "Inserisci il cognome",
+  "PLACEHOLDER_EMAIL": "Inserisci l'email",
+  "PLACEHOLDER_PASSWORD": "Inserisci la password",
+  "TERMS_LABEL": "Accetta i nostri",
+  "TERMS_LINK": "Termini e Condizioni",
+  "TERMS_ERROR": "Devi accettare i termini e le condizioni per continuare.",
+  "BUTTON": "Crea account"
+},
+"RESET_PASSWORD_PAGE": {
+  "TITLE": "Inserisci la nuova password qui",
+  "PLACEHOLDER_PASSWORD": "Inserisci la password",
+  "PLACEHOLDER_CONFIRM": "Conferma la password",
+  "BUTTON": "Invia email"
+},
+"LOGIN": {
+  "SUCCESS_TITLE": "Bentornato!",
+  "SUCCESS_TEXT": "Accesso effettuato con successo.",
+  "ERROR_TITLE": "Errore di accesso",
+  "ERROR_TEXT": "Controlla le tue credenziali."
+},
+"REGISTER": {
+  "TERMS_TITLE": "Termini richiesti",
+  "TERMS_TEXT": "Devi accettare i termini e le condizioni per continuare.",
+  "SUCCESS_TITLE": "Registrazione riuscita!",
+  "SUCCESS_TEXT": "Benvenuto in WorkSpace.",
+  "ERROR_TITLE": "Registrazione fallita",
+  "ERROR_TEXT": "Qualcosa è andato storto. Riprova più tardi."
+},
+"RESET": {
+  "MISMATCH_TITLE": "Le password non coincidono",
+  "MISMATCH_TEXT": "Le password inserite non corrispondono.",
+  "SUCCESS_TITLE": "Reimpostazione completata",
+  "SUCCESS_TEXT": "La tua password è stata reimpostata con successo.",
+  "ERROR_TITLE": "Errore",
+  "ERROR_TEXT": "Si è verificato un errore durante la reimpostazione. Riprova."
+}
+
+
+
+}

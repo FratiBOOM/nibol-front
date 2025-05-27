@@ -6,11 +6,13 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { NgFor } from '@angular/common';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-explore-workspaces',
   standalone: true,
-  imports: [CommonModule, RouterModule, FormsModule, NgFor],
+  imports: [CommonModule, RouterModule, FormsModule, NgFor, TranslateModule],
   templateUrl: './explore.component.html',
   styleUrls: ['./explore.component.css']
 })
