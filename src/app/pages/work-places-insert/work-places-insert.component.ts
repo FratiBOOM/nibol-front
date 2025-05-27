@@ -21,7 +21,8 @@ import Swal from 'sweetalert2';
   imports: [ReactiveFormsModule, HttpClientModule, CommonModule, RouterModule, TranslateModule],
 })
 export class WorkPlacesInsertComponent {
-  workplaceForm: FormGroup; // ✅ NOME CAMBIATO!
+  workplaceForm: FormGroup;
+  imagePreview: string | ArrayBuffer | null = null;
 
   constructor(private fb: FormBuilder, private http: HttpClient, private router: Router, private workplacesService: WorkPlacesService, private translate: TranslateService) {
     this.workplaceForm = this.fb.group({
@@ -75,6 +76,17 @@ onSubmit() {
   }
 }
 
+onImageSelected(event: Event): void {
+  const file = (event.target as HTMLInputElement).files?.[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = () => {
+      this.imagePreview = reader.result;
+      this.workplaceForm.patchValue({ immagineUrl: reader.result });
+    };
+    reader.readAsDataURL(file);
+  }
+}
 
 
 }

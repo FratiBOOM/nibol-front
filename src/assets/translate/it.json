@@ -167,7 +167,8 @@
   "PRICE_STANDARD": "€€ (Standard)",
   "PRICE_PREMIUM": "€€€ (Premium)",
   "BUTTON_ADD": "Aggiungi spazio di lavoro",
-  "BUTTON_EXPLORE": "Esplora gli spazi"
+  "BUTTON_EXPLORE": "Esplora gli spazi",
+  "IMAGE": "Upload Image"
 },
 "EXPLORE": {
   "TITLE": "Esplora gli Spazi di Lavoro",
@@ -280,7 +281,10 @@
   "BOOK_SUCCESS": "Prenotazione effettuata con successo!",
   "REVIEW_SUCCESS": "Recensione inviata!",
   "ADD_SUCCESS": "Spazio di lavoro aggiunto con successo!",
-  "ADD_ERROR": "Si è verificato un errore durante l'aggiunta dello spazio di lavoro."
+  "ADD_ERROR": "Si è verificato un errore durante l'aggiunta dello spazio di lavoro.",
+  "REVIEW_ERROR": "Invio recensione fallito. Riprova più tardi.",
+  "BOOK_ERROR": "Prenotazione fallita. Riprova più tardi.",
+  "DELETE_ERROR": "Impossibile eliminare lo spazio di lavoro. Riprova."
 }
 
 

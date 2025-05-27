@@ -94,7 +94,7 @@
     "CONTACT": "Contact",
     "LOGIN": "Login",
     "LOGOUT": "Logout",
-    "SIGNUP": "Signup"
+    "SIGNUP": "Sign up"
   },
   "FOOTER": {
     "COPYRIGHT": "All rights reserved"
@@ -167,7 +167,8 @@
   "PRICE_STANDARD": "€€ (Standard)",
   "PRICE_PREMIUM": "€€€ (Premium)",
   "BUTTON_ADD": "Add workspace",
-  "BUTTON_EXPLORE": "Explore Spaces"
+  "BUTTON_EXPLORE": "Explore Spaces",
+  "IMAGE": "Upload Image"
 },
 "EXPLORE": {
   "TITLE": "Explore Workspaces",
@@ -280,7 +281,10 @@
   "BOOK_SUCCESS": "Booking successful!",
   "REVIEW_SUCCESS": "Review posted!",
   "ADD_SUCCESS": "Workspace successfully added!",
-  "ADD_ERROR": "An error occurred while adding the workspace."
+  "ADD_ERROR": "An error occurred while adding the workspace.",
+  "REVIEW_ERROR": "Failed to post review. Please try again later.",
+  "BOOK_ERROR": "Failed to complete booking. Please try again later.",
+  "DELETE_ERROR": "Failed to delete the workspace. Please try again."
 }
 
 

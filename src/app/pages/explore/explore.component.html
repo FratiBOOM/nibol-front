@@ -11,7 +11,8 @@
   <div class="row g-4">
     <div class="col-md-4" *ngFor="let place of filteredWorkspaces">
       <div class="card h-100 shadow-sm border-0 rounded-4">
-        <div class="bg-light rounded-top" style="height: 160px;"></div>
+        <img [src]="place?.immagineUrl || 'assets/logo.png'" alt="Workspace image"
+        class="img-fluid rounded mb-3 w-100" style="max-height: 160; object-fit: cover;" />
 
         <div class="card-body">
           <div class="d-flex justify-content-end mb-2">

@@ -17,6 +17,8 @@ export interface WorkPlace {
   telefono?: string;
   livelloRumore?: string;
   fasciaPrezzo?: string;
+  immagineUrl?: string;
+
 }
 
 

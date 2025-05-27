@@ -68,7 +68,8 @@ deletePlace() {
     'WORKPLACE.CONFIRM_DELETE_TEXT',
     'WORKPLACE.CONFIRM_DELETE_CONFIRM',
     'WORKPLACE.CONFIRM_DELETE_CANCEL',
-    'WORKPLACE.DELETE_SUCCESS'
+    'WORKPLACE.DELETE_SUCCESS',
+    'WORKPLACE.DELETE_ERROR'
   ]).subscribe(t => {
     Swal.fire({
       icon: 'warning',
@@ -82,14 +83,18 @@ deletePlace() {
       if (result.isConfirmed && this.place?.id) {
         this.service.delete(this.place.id).subscribe({
           next: () => {
-            Swal.fire('Deleted!', t['WORKPLACE.DELETE_SUCCESS'], 'success');
+            Swal.fire('✅', t['WORKPLACE.DELETE_SUCCESS'], 'success');
             this.router.navigate(['/explore']);
+          },
+          error: () => {
+            Swal.fire('❌', t['WORKPLACE.DELETE_ERROR'], 'error');
           }
         });
       }
     });
   });
 }
+
 
 bookNow() {
   if (!this.place?.id) return;
@@ -102,10 +107,14 @@ bookNow() {
       });
     },
     error: err => {
+      this.translate.get(['WORKPLACE.BOOK_ERROR']).subscribe(t => {
+        Swal.fire('❌', t['WORKPLACE.BOOK_ERROR'], 'error');
+      });
       console.error('Booking failed:', err);
     }
   });
 }
+
 
 
   isBookingTimeValid(): boolean {
@@ -131,17 +140,23 @@ postReview() {
   const review = { ...this.newReview };
 
   this.http.post(`https://localhost:7155/api/Review/${this.place.id}/post`, review)
-    .subscribe({
-      next: () => {
-        this.translate.get(['WORKPLACE.REVIEW_SUCCESS']).subscribe(t => {
-          Swal.fire('✅', t['WORKPLACE.REVIEW_SUCCESS'], 'success');
-        });
-        this.reviews.push({ ...review, creazioneReview: new Date() });
-        this.newReview = { userEmail: '', voto: 0, commento: '' };
-        this.router.navigate(['/']);
-      },
-      error: err => console.error('Errore post review:', err)
-    });
+  .subscribe({
+    next: () => {
+      this.translate.get(['WORKPLACE.REVIEW_SUCCESS']).subscribe(t => {
+        Swal.fire('✅', t['WORKPLACE.REVIEW_SUCCESS'], 'success');
+      });
+      this.reviews.push({ ...review, creazioneReview: new Date() });
+      this.newReview = { userEmail: '', voto: 0, commento: '' };
+      this.router.navigate(['/']);
+    },
+    error: err => {
+      this.translate.get(['WORKPLACE.REVIEW_ERROR']).subscribe(t => {
+        Swal.fire('❌', t['WORKPLACE.REVIEW_ERROR'], 'error');
+      });
+      console.error('Errore post review:', err);
+    }
+  });
+
 }
 
 }
