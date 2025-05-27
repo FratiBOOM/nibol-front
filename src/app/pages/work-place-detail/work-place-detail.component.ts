@@ -7,8 +7,10 @@ import { RouterModule } from '@angular/router';
 import { Booking } from '../../models/booking';
 import { FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import { TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
+import Swal from 'sweetalert2';
+import { TranslateService } from '@ngx-translate/core';
+
 
 
 @Component({
@@ -38,7 +40,8 @@ export class WorkplaceDetailsComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private service: WorkPlacesService,
-    private http: HttpClient
+    private http: HttpClient,
+  private translate: TranslateService 
   ) { }
 
   ngOnInit(): void {
@@ -57,26 +60,54 @@ export class WorkplaceDetailsComponent implements OnInit {
 
   }
 
-  deletePlace() {
-    if (this.place && confirm('Are you sure you want to delete this workspace?')) {
-      this.service.delete(this.place.id!).subscribe({
-        next: () => {
-          alert('Workspace deleted successfully.');
-          this.router.navigate(['/explore']);
-        },
-        error: (err) => console.error('Errore eliminazione:', err)
-      });
-    }
-  }
-  bookNow() {
-    if (!this.place?.id) return;
+deletePlace() {
+  if (!this.place) return;
 
-    this.service.bookPlace(this.place.id, this.bookingData).subscribe({
-      next: () => alert('Booking successful!'),
-      error: (err) => console.error('Booking failed:', err)
+  this.translate.get([
+    'WORKPLACE.CONFIRM_DELETE_TITLE',
+    'WORKPLACE.CONFIRM_DELETE_TEXT',
+    'WORKPLACE.CONFIRM_DELETE_CONFIRM',
+    'WORKPLACE.CONFIRM_DELETE_CANCEL',
+    'WORKPLACE.DELETE_SUCCESS'
+  ]).subscribe(t => {
+    Swal.fire({
+      icon: 'warning',
+      title: t['WORKPLACE.CONFIRM_DELETE_TITLE'],
+      text: t['WORKPLACE.CONFIRM_DELETE_TEXT'],
+      showCancelButton: true,
+      confirmButtonText: t['WORKPLACE.CONFIRM_DELETE_CONFIRM'],
+      cancelButtonText: t['WORKPLACE.CONFIRM_DELETE_CANCEL'],
+      confirmButtonColor: '#dc3545'
+    }).then(result => {
+      if (result.isConfirmed && this.place?.id) {
+        this.service.delete(this.place.id).subscribe({
+          next: () => {
+            Swal.fire('Deleted!', t['WORKPLACE.DELETE_SUCCESS'], 'success');
+            this.router.navigate(['/explore']);
+          }
+        });
+      }
     });
-    this.router.navigate(['/']);
-  }
+  });
+}
+
+bookNow() {
+  if (!this.place?.id) return;
+
+  this.service.bookPlace(this.place.id, this.bookingData).subscribe({
+    next: () => {
+      this.translate.get(['WORKPLACE.BOOK_SUCCESS']).subscribe(t => {
+        Swal.fire('✅', t['WORKPLACE.BOOK_SUCCESS'], 'success');
+        this.router.navigate(['/']);
+      });
+    },
+    error: err => {
+      console.error('Booking failed:', err);
+    }
+  });
+}
+
+
   isBookingTimeValid(): boolean {
   if (!this.place || !this.bookingData.data || !this.bookingData.orarioInizio || !this.bookingData.orarioFine) {
     return false;
@@ -94,24 +125,23 @@ export class WorkplaceDetailsComponent implements OnInit {
   return startTime >= openingTime && endTime <= closingTime && startTime < endTime;
 }
 
-  postReview() {
-    if (!this.place || !this.place.id) return;
+postReview() {
+  if (!this.place?.id) return;
 
-    const review = {
-      userEmail: this.newReview.userEmail,
-      voto: this.newReview.voto,
-      commento: this.newReview.commento
-    };
+  const review = { ...this.newReview };
 
-    this.http.post(`https://localhost:7155/api/Review/${this.place.id}/post`, review)
-      .subscribe({
-        next: () => {
-          alert('Review posted!');
-          this.reviews.push({ ...review, creazioneReview: new Date() });
-          this.newReview = { userEmail: '', voto: 0, commento: '' };
-        },
-        error: err => console.error('Errore post review:', err)
-      });
-      this.router.navigate(['/']);
-  }
+  this.http.post(`https://localhost:7155/api/Review/${this.place.id}/post`, review)
+    .subscribe({
+      next: () => {
+        this.translate.get(['WORKPLACE.REVIEW_SUCCESS']).subscribe(t => {
+          Swal.fire('✅', t['WORKPLACE.REVIEW_SUCCESS'], 'success');
+        });
+        this.reviews.push({ ...review, creazioneReview: new Date() });
+        this.newReview = { userEmail: '', voto: 0, commento: '' };
+        this.router.navigate(['/']);
+      },
+      error: err => console.error('Errore post review:', err)
+    });
+}
+
 }

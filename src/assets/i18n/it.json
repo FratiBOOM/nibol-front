@@ -127,6 +127,10 @@
   "PLACEHOLDER_SUBJECT": "Descrizione breve della tua richiesta",
   "PLACEHOLDER_MESSAGE": "Inserisci i dettagli della tua richiesta...",
   "BUTTON": "Invia Messaggio",
+    "SUCCESS_TITLE": "Messaggio Inviato",
+  "SUCCESS_TEXT": "Il tuo messaggio è stato inviato con successo!",
+  "ERROR_TITLE": "Campi incompleti",
+  "ERROR_TEXT": "Compila tutti i campi obbligatori.",
   "INFO_FREELANCERS": {
     "TITLE": "Per Freelancer",
     "POINT1": "• Consigli su spazi di lavoro",
@@ -266,7 +270,19 @@
   "SUCCESS_TEXT": "La tua password è stata reimpostata con successo.",
   "ERROR_TITLE": "Errore",
   "ERROR_TEXT": "Si è verificato un errore durante la reimpostazione. Riprova."
+},
+"WORKPLACE": {
+  "CONFIRM_DELETE_TITLE": "Sei sicuro?",
+  "CONFIRM_DELETE_TEXT": "Vuoi davvero eliminare questo spazio di lavoro?",
+  "CONFIRM_DELETE_CONFIRM": "Sì, elimina",
+  "CONFIRM_DELETE_CANCEL": "Annulla",
+  "DELETE_SUCCESS": "Spazio di lavoro eliminato con successo.",
+  "BOOK_SUCCESS": "Prenotazione effettuata con successo!",
+  "REVIEW_SUCCESS": "Recensione inviata!",
+  "ADD_SUCCESS": "Spazio di lavoro aggiunto con successo!",
+  "ADD_ERROR": "Si è verificato un errore durante l'aggiunta dello spazio di lavoro."
 }
+
 
 
 

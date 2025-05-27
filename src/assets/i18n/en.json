@@ -127,6 +127,10 @@
   "PLACEHOLDER_SUBJECT": "Brief description of your inquiry",
   "PLACEHOLDER_MESSAGE": "Please provide details about your inquiry...",
   "BUTTON": "Send Message",
+    "SUCCESS_TITLE": "Message Sent",
+  "SUCCESS_TEXT": "Your message has been sent successfully!",
+  "ERROR_TITLE": "Form Incomplete",
+  "ERROR_TEXT": "Please fill in all required fields.",
   "INFO_FREELANCERS": {
     "TITLE": "For Freelancers",
     "POINT1": "• Workspace recommendations",
@@ -266,7 +270,19 @@
   "SUCCESS_TEXT": "Your password has been reset successfully.",
   "ERROR_TITLE": "Error",
   "ERROR_TEXT": "Error resetting password. Please try again."
+},
+"WORKPLACE": {
+  "CONFIRM_DELETE_TITLE": "Are you sure?",
+  "CONFIRM_DELETE_TEXT": "Do you really want to delete this workspace?",
+  "CONFIRM_DELETE_CONFIRM": "Yes, delete it",
+  "CONFIRM_DELETE_CANCEL": "Cancel",
+  "DELETE_SUCCESS": "Workspace deleted successfully.",
+  "BOOK_SUCCESS": "Booking successful!",
+  "REVIEW_SUCCESS": "Review posted!",
+  "ADD_SUCCESS": "Workspace successfully added!",
+  "ADD_ERROR": "An error occurred while adding the workspace."
 }
+
 
 
 
