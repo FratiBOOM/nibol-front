@@ -248,7 +248,7 @@
   "TITLE": "Inserisci la nuova password qui",
   "PLACEHOLDER_PASSWORD": "Inserisci la password",
   "PLACEHOLDER_CONFIRM": "Conferma la password",
-  "BUTTON": "Invia email"
+  "BUTTON": "Cambia password"
 },
 "LOGIN": {
   "SUCCESS_TITLE": "Bentornato!",
